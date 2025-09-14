@@ -8,7 +8,7 @@ const form = document.getElementById('regForm');
 const formMsg = document.getElementById('formMsg');
 
 // ضع هنا رابط Google Apps Script الذي ستنشره لاحقًا
-const GAS_URL = 'https://script.google.com/macros/s/AKfycbzfkQDNc3mXAtGgifSLdead7j_LrsdEGIm6EHXOHwE-bHraZ5JAne-lNojh1IbaD65K/exec';
+const GAS_URL = 'https://script.google.com/macros/s/AKfycbwlEktczurewTQu5gBrb_sO2_5aVmMuMs-grflEj-VZVs7zkmywAUBsCuLKRHaidtc/exec';
 
 // فتح/اغلاق المودال
 function openModal(){ modal.classList.remove('hidden'); modal.setAttribute('aria-hidden', 'false'); }
