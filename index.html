@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Event Landing - نسخةكم</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">شعار الحدث</div>
+      <nav class="nav">
+        <a href="#home">الرئيسية</a>
+        <a href="#about">حول</a>
+        <a href="#speakers">المتحدثون</a>
+        <a href="#schedule">الجدول</a>
+        <a href="#contact">اتصل</a>
+      </nav>
+      <button id="registerBtn" class="btn primary">سجّل الآن</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <h1>اسم الحدث - عنوان جذّاب</h1>
+        <p>وصف قصير عن الحدث، التاريخ، المكان، ونداء لاتخاذ إجراء.</p>
+        <div class="hero-ctas">
+          <button class="btn primary" id="heroRegister">سجّل</button>
+          <a href="#about" class="btn ghost">المزيد</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>حول الحدث</h2>
+        <p>تفاصيل الحدث — هذا المكان تحط المحتوى تبعك.</p>
+      </div>
+    </section>
+
+    <section id="speakers" class="section">
+      <div class="container">
+        <h2>المتحدثون</h2>
+        <div class="grid">
+          <div class="card">متحدث 1</div>
+          <div class="card">متحدث 2</div>
+          <div class="card">متحدث 3</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule" class="section">
+      <div class="container">
+        <h2>الجدول</h2>
+        <p>البرنامج الزمني للحدث.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>اتصل بنا</h2>
+        <p>معلومات التواصل.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© كل الحقوق محفوظة - اسم الحدث</p>
+    </div>
+  </footer>
+
+  <!-- Modal form -->
+  <div id="modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close" id="modalClose">×</button>
+      <h3>نموذج التسجيل</h3>
+      <form id="regForm">
+        <label>الاسم
+          <input name="name" type="text" required />
+        </label>
+        <label>البريد الإلكتروني
+          <input name="email" type="email" required />
+        </label>
+        <label>الهاتف
+          <input name="phone" type="tel" />
+        </label>
+        <label>الملاحظات
+          <textarea name="notes"></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn primary">أرسل</button>
+          <button type="button" class="btn ghost" id="cancelBtn">إلغاء</button>
+        </div>
+        <p id="formMsg" class="form-msg" role="status"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
